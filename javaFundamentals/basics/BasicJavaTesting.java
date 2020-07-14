@@ -2,7 +2,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 
 public class BasicJavaTesting {
-    public static void main(final String[] args) {
+    public static void main(String[] args) {
     
     BasicJava basics = new BasicJava();
 
@@ -63,7 +63,7 @@ public class BasicJavaTesting {
     // Assignmet 12 - Shifting the Values in the Array
     System.out.println("\nAlgorithm 12 - Shifting the Values in the Array");
     int[] x4 = {1,5,10,7,-2};
-    basics.shiftingTheValuesInTheArray(x4);
+    basics.eliminateNegativeValues(x4);
     System.out.println(Arrays.toString(x4));
 
     }
