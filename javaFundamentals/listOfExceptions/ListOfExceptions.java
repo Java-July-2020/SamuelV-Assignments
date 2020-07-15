@@ -1,6 +1,7 @@
 import java.util.ArrayList;
 
-public class ListOfExceptions {
+
+public class ListOfExceptions{
     public static void main(String[] args){
         ArrayList<Object> myList = new ArrayList<Object>();
         myList.add("13");
@@ -12,8 +13,8 @@ public class ListOfExceptions {
             try{
                 Integer castedValue = (Integer) myList.get(i);
             }
-            catch (ClassCastException e){
-
+            catch (Exception e){
+                System.out.println(e);
             }
         }
     }
