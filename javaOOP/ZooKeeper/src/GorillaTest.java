@@ -2,7 +2,7 @@
 public class GorillaTest {
 
 	public static void main(String[] args) {
-		Gorilla DK = new Gorilla(500);
+		Gorilla DK = new Gorilla(100);
 		
 		System.out.println("The initial energy level of DK is: "+ DK.getEnergyLevel());
 		
