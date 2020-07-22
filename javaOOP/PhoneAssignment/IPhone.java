@@ -7,6 +7,8 @@ public class IPhone extends Phone implements Ringable {
     public IPhone(String versionNumber, int batteryPercentage, String carrier, String ringTone) {
         super(versionNumber, batteryPercentage, carrier, ringTone); // using constructor of parent class
     }
+
+    
     @Override
     public String ring() {
         String output = "iPhone says " + this.getRingTone();
