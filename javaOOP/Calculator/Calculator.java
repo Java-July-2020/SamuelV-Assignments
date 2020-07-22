@@ -21,6 +21,9 @@ public class Calculator {
         if (operation == "+"){
             result = this.operandOne + this.operandTwo;
         }
+        else if (operation == "-"){
+            result = this.operandOne - this.operandTwo;
+        }
         return result;
     }
 
