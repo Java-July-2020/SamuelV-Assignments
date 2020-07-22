@@ -34,9 +34,9 @@ public class PokemonTest {
         System.out.println("Pikachu attacks Charmander!");
         pokemon_1.attackPokemon(pokemon_2); // Pikachu attacks Charmander
         System.out.println("Charmander attacks Squirtle!");
-        pokemon_2.attackPokemon(pokemon_3); // Pikachu attacks Charmander
+        pokemon_2.attackPokemon(pokemon_3); // Charmander attacks Squirtle
         System.out.println("Bulbasaur attacks Squirtle!");
-        pokemon_4.attackPokemon(pokemon_3); // Pikachu attacks Charmander
+        pokemon_4.attackPokemon(pokemon_3); // Bulbasaur attacks Squirtle
         
         System.out.println("\nThese are the final status of my pokemons after attacking:");
         for (Pokemon thisPokemon : pokedex.myPokemons){
