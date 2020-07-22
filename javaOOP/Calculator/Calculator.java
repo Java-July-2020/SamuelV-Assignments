@@ -9,12 +9,6 @@ public class Calculator {
     public Calculator(){
     }
 
-    public Calculator(double operandOne, double operandTwo, String operation){
-        this.operandOne = operandOne;
-        this.operandTwo = operandTwo;
-        this.operation = operation;
-    }
-
     // III) Customized Methods
     public double performOperation(){
         double result = 0;
