@@ -8,6 +8,7 @@ public class Calculator implements java.io.Serializable {
     // II) Constructor of the Class
     public Calculator(){
     }
+    
 
     // III) Customized Methods
     public double performOperation(){

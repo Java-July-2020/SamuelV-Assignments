@@ -5,12 +5,15 @@ public class Calculator implements java.io.Serializable{
     // I) Attributes of the Class
     private ArrayList<Double> myOperands;
     private ArrayList<String> myOperators;
-    private double result = 0;
+    private double result;
 
     // II) Constructor of the Class
     public Calculator(){
-    
+        this.myOperands = new ArrayList<Double>();
+        this.myOperators  = new ArrayList<String>();
+        this.result = 0;
     }
+
 
     // III) Customized Methods
 
@@ -60,6 +63,10 @@ public class Calculator implements java.io.Serializable{
                     this.result -= this.myOperands.get(i+1); 
                 }
             }
+
+            //b.3) After getting the results we clear myOperands and myOperators ArrayLists
+            this.myOperands.clear();
+            this.myOperators.clear();
 
         }
         
