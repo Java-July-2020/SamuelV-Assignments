@@ -64,7 +64,7 @@ public class Calculator implements java.io.Serializable{
                 }
             }
 
-            //b.3) After getting the results we clear myOperands and myOperators ArrayLists
+            //b.3) Third, After getting the results we clear myOperands and myOperators ArrayLists
             this.myOperands.clear();
             this.myOperators.clear();
 

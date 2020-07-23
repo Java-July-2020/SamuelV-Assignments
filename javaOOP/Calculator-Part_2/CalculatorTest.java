@@ -36,7 +36,23 @@ public class CalculatorTest {
         calc.performOperation("+");
         calc.performOperation(15.0);
         calc.performOperation("=");
-        calc.getResults(); // Should return 125
+        calc.getResults(); // Should return 10.3333
+
+        // I) Example 4
+        System.out.println("\nIV) Calculating the following operation: 100.0 / 5.0 + 5.0 x 7.0 + 5.0 - 30.0 =");
+        calc.performOperation(100.0);
+        calc.performOperation("/");
+        calc.performOperation(5.0);
+        calc.performOperation("+");
+        calc.performOperation(5.0);
+        calc.performOperation("*");
+        calc.performOperation(7.0);
+        calc.performOperation("+");
+        calc.performOperation(5.0);
+        calc.performOperation("-");
+        calc.performOperation(30.0);
+        calc.performOperation("=");
+        calc.getResults(); // Should return 10.3333
     }
     
 }
