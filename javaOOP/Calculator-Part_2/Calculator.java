@@ -3,20 +3,16 @@ import java.util.ArrayList;
 public class Calculator implements java.io.Serializable{
     
     // I) Attributes of the Class
-    private ArrayList<Double> myOperands;
-    private ArrayList<String> myOperators;
+    private ArrayList<Double> myOperands = new ArrayList<Double>();
+    private ArrayList<String> myOperators = new ArrayList<String>();
     private double result;
 
     // II) Constructor of the Class
     public Calculator(){
-        this.myOperands = new ArrayList<Double>();
-        this.myOperators  = new ArrayList<String>();
-        this.result = 0;
     }
 
 
     // III) Customized Methods
-
     public void performOperation(double operand){
         this.myOperands.add(operand);
     }
@@ -76,5 +72,5 @@ public class Calculator implements java.io.Serializable{
         System.out.println("The result of the operation is: " + Double.toString(this.result));
     }
 
-    //IV) Getters and Setters 
+   
 }
