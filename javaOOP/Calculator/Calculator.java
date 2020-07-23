@@ -1,4 +1,4 @@
-public class Calculator {
+public class Calculator implements java.io.Serializable {
     
     // I) Attributes of the Class
     private double operandOne;
