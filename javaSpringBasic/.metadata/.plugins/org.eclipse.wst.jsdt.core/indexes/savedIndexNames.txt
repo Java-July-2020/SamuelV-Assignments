@@ -1,0 +1,1 @@
+INDEX VERSION 1.4+/Users/Samuel/OneDrive/Coding Dojo/java_stack/javaAssigments/javaSpringBasic/.metadata/.plugins/org.eclipse.wst.jsdt.core/indexes
