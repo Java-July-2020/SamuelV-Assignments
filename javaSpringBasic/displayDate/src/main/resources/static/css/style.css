@@ -1,0 +1,52 @@
+*{
+	margin: 0px;
+    padding: 0px;
+/* 	outline: 1px solid red; */
+}
+
+#container{
+	
+	width: 900px;
+	margin: 20px auto;
+}
+
+#templateBox{
+	background-color: #efefef;
+	display:inline-block;
+	width:445px;
+	height: 300px;
+	text-align: center;
+	border: 1px solid black;
+}
+
+#templateBox a{
+	display: block;
+	margin-top:120px;
+
+}
+
+#dateBox{
+	background-color: #efefef;
+	color: blue;
+	font-size:30px;
+	height: 300px;
+	text-align: center;
+	border: 1px solid black;
+}
+
+#dateBox p{
+	margin-top:120px;
+}
+
+#timeBox{
+	background-color: #efefef;
+	color: green;
+	font-size:30px;
+	height: 300px;
+	text-align: center;
+	border: 1px solid black;
+}
+
+#timeBox p{
+	margin-top:120px;
+}
