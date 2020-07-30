@@ -1,0 +1,42 @@
+*{
+	margin: 0px;
+    padding: 0px;
+	outline: 1px solid red;
+}
+
+#container{
+	
+	width: 900px;
+	margin: 20px auto;
+}
+
+#welcomeBox{
+	background-color: #efefef;
+	height: 300px;
+	text-align: center;
+	border: 1px solid black;
+}
+
+#welcomeBox p{
+	
+	margin-top:120px;
+	font-size: 30px;
+
+}
+
+#counterBox{
+	background-color: #efefef;
+	height: 300px;
+	padding: 10px;
+	border: 1px solid black;
+}
+
+
+#counterBox p{
+	margin: 5px;
+
+}
+
+#reset{
+	margin-top:230px !important;
+}
