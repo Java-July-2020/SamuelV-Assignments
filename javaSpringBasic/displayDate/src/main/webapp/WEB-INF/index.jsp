@@ -11,8 +11,8 @@
 </head>
 <body>
 	<div id="container">
-		<div id="templateBox"><a href="#">Date Template</a></div>
-		<div id="templateBox"><a href="#">Time Template</a></div>
+		<div id="templateBox"><a href="/date">Date Template</a></div>
+		<div id="templateBox"><a href="/time">Time Template</a></div>
 	</div>
 
 </body>
