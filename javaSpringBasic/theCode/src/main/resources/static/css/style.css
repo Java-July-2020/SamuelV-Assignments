@@ -1,0 +1,64 @@
+*{
+	margin: 0px;
+    padding: 0px;
+	outline: 1px solid red;
+}
+
+#container{
+	
+	width: 900px;
+	margin: 20px auto;
+}
+
+
+
+#main{
+	background-color: #efefef;
+	height: 300px;
+	text-align: center;
+	border: 1px solid black;
+}
+
+	#main #errorMessageBox{
+	
+	margin-top:100px;
+	color: red;
+	
+	}
+
+	#main form{
+		
+		padding: 5px;
+		display: block;
+	
+	}
+	
+	#main form p{
+		
+		font-size:24px;
+	
+	}
+	
+	#main form button, input{
+		margin: 5px auto;
+		display: block;
+		font-size: 18px;
+	
+	}
+	
+	#main h3{
+	
+	margin-top:100px;
+
+	
+	}
+	
+	#main ul{
+		
+	width: 10%;
+	margin: 10px auto;
+	padding: 5px;
+	list-style-type:disc;
+		
+	}
+	
