@@ -1,0 +1,80 @@
+*{
+    margin: 0px;
+    padding: 0px;
+/*     outline: 1px solid red; */
+}
+
+#wrapper{
+    height:auto;
+    width:700px;
+    margin:0px auto;
+    padding: 10px;
+    background-color: lightgray;
+    
+}
+
+h2{
+    width: 50%;
+    margin: 10px 25%;
+    padding: 5px 10px;
+    text-align: center;
+    background-color: white;
+}
+
+
+form{
+    height: 600px;
+    width: 50%;
+    margin:0px 25% 10px;
+    padding: 10px;
+    border: 1px solid black;
+}
+
+table{
+    height: 100%;
+    border-collapse: collapse;
+    /* border-spacing: 0; */
+   
+    
+}
+
+input[type="text"], input[type="password"], input[type="date"]{
+    width: 200px;
+    padding: 2px;
+    font-size: 12px;
+}
+
+input[type="radio"]{
+    margin: 0px 10px
+}
+
+textarea{
+	width: 96%;
+    padding: 5px;
+}
+
+input[type="checkbox"]{
+    margin: 7px 3px
+}
+
+select{
+    width: 200px;
+}
+
+input[type="submit"]{
+    
+    background-color: #4CAF50;
+    color: white;
+    padding: 5px 10px;
+    margin: 4px 2px;
+    font-size: 18px;
+}
+
+button[type="submit"]{
+    
+    background-color: #4CAF50;
+    color: white;
+    padding: 5px 10px;
+    margin: 4px 2px;
+    font-size: 18px;
+}
