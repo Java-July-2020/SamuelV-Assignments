@@ -1,0 +1,89 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    /* outline: 1px solid red; */
+}
+
+#wrapper{
+    height:auto;
+    width: 900px;
+    margin:0px auto;
+    padding: 10px 20px;
+    background-color: lightgray;
+    
+}
+
+#header{
+    padding: 10px;
+    margin: 5px 0px 10px;
+    background-color: white;
+}
+    #header p{
+        /* width: 100px; */
+        display: inline-block;
+    }
+
+    #header p#totalAmount{
+        width: 150px;
+        margin-left: 20px;
+        padding: 3px 5px;
+        display: inline-block;
+        outline: 2px solid black;
+    }
+
+#main{
+    margin: 10px 0px;
+    padding: 15px;
+    background-color: white;
+}
+
+    #main div.box{
+        height: 180px;
+        width: 180px;
+        margin: 0px 7px;
+        padding: 10px;
+        display: inline-block;
+        vertical-align: top;
+        background-color: lightgray;
+        outline: 2px solid black;
+    }
+
+    #main div.box h4{
+        text-align: center;
+        padding: 10px;
+    }
+
+    #main div.box p{
+        text-align: center;
+        padding: 10px;
+    }
+
+    #main div.box button{
+        width: 50%;
+        margin:60px 25% 20px;
+        padding: 5px 10px;
+    }
+
+
+
+#footer{
+    height: 180px;
+    margin: 10px 0px;
+    padding: 10px;
+    background-color: white;
+}
+    #footer div#activities{
+        overflow: scroll;
+        margin: 5px 0px;
+        height: 80%;
+        padding: 5px;
+        outline: 2px solid black;
+
+    }
+
+        #footer div#activities p.win{
+            color:green;
+        }
+        #footer div#activities p.lose{
+            color:red;
+        }
