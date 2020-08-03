@@ -9,6 +9,7 @@ import javax.servlet.http.HttpSession;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 
 @Controller
@@ -31,7 +32,7 @@ public class MainController {
 		return "index.jsp";
 	}
 	
-	@RequestMapping("/process_money")
+	@RequestMapping(path="/process_money", method=RequestMethod.POST)
     public String processMoney(HttpSession session, @RequestParam(value="place", required=false) String place) {
 		
 		// I) INITIALIZATION OF SOME VARIABLES
@@ -48,7 +49,6 @@ public class MainController {
 		ArrayList<String> activityLog = (ArrayList<String>) session.getAttribute("activityLog");
 		
 
-		
 		// II) PROCESSING THE MONEY
 		
 		// Farm Selected
