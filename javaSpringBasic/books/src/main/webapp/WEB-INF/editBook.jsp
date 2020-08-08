@@ -6,19 +6,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>New Book</title>
+    <title>Edit Book</title>
     
    	
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-	<link rel="stylesheet" type="text/css" href="../css/style.css">
+	<link rel="stylesheet" type="text/css" href="../../css/style.css">
 	
 </head>
 
 <body>
  	
- 	<h1>New Book</h1>
+ 	<h1>Edit Book</h1>
 	<div>
-		<form:form action="/books/new" method="POST" modelAttribute="book">
+		<form:form action="/books/edit/${book.id}" method="POST" modelAttribute="book">
 		    <div class="form-group row mx-0">
 		        <form:label class="col-sm-1 col-form-label" path="title">Title</form:label>
 		        <div class="col-sm-4">
