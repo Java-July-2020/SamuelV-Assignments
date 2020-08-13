@@ -1,0 +1,22 @@
+*{
+    margin: 0px;
+    padding: 0px;
+/*     outline: 1px solid red; */
+}
+
+main {
+	padding: 20px;
+	background-color: #dad8d8;
+} 
+
+p {
+	margin: 0px;
+}
+
+a {
+  text-decoration: underline !important;
+}
+
+[id$='errors']{
+	color: red !important;
+}
