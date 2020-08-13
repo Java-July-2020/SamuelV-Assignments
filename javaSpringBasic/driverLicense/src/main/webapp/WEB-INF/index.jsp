@@ -3,10 +3,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    
      <!-- 0.1) Meta Tags and Title -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Show Driver</title>
+    <title>Driver's License Dashboard</title>
     
     
     <!-- 0.2) External Libraries for Styles-->
@@ -26,12 +27,12 @@
 	
 	
 	<!-- 0.4) Personal Styles and Scripts -->
-	<link rel="stylesheet" type="text/css" href="../../css/style.css">
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
 	
 </head>
 
 <body>
-
+	
 	<!-- ================================================================================================ -->
     <!-- 1) NAVBAR -->
     <!-- ================================================================================================ -->
@@ -49,9 +50,6 @@
         <!-- Navbar Links -->
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto">
-            	<li class="nav-item">
-                    <a class="nav-link active" href="/dashboard">Dashboard</a>
-                </li>
                 <li class="nav-item">
                     <a class="nav-link active" href="/persons/new">New Person</a>
                 </li>
@@ -67,13 +65,34 @@
     <!-- 2) MAIN -->
     <!-- ================================================================================================ -->
 	
-	<main class="mt-3">
-	
-	 	<h1><c:out value="${person.firstName} ${person.lastName}"/></h1>
-		<p>License Number: <c:out value="${person.license.licenseNumber}"/></p>
-		<p>State: <c:out value="${person.license.state}"/></p>
-		<p>State: <c:out value="${person.license.getExpirationDateFormatted()}"/></p>
-		
+	<main>
+	 	<h2>All Drivers</h2>
+		<table class="table table-dark mt-3">
+	    	<thead>
+	        	<tr>
+	            	<th>First Name</th>
+	            	<th>Last Name</th>
+	            	<th>License Number</th>
+	            	<th>State</th>
+	            	<th>Expiration Date</th>
+	       		</tr>
+	    	</thead>
+	    	<tbody>
+	        	<c:forEach items="${persons}" var="person">
+	        	<tr>
+	            	<td><c:out value="${person.firstName}"/></td>
+	            	<td><c:out value="${person.lastName}"/></td>
+	            	<td><c:out value="${person.license.licenseNumber}"/></td>
+	            	<td><c:out value="${person.license.state}"/></td>
+	            	<td><c:out value="${person.license.getExpirationDateFormatted()}"/></td>
+	            	<td> 
+	            		<a href="/persons/${person.id}">Show</a> |
+	            		<a href="/persons/delete/${person.id}">Delete</a> 
+	            	</td>
+	        	</tr>
+	        	</c:forEach>
+	    	</tbody>
+		</table>
 	</main>
 	
 </body>

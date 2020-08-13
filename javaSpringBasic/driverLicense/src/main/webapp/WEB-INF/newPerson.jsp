@@ -41,7 +41,7 @@
 	<nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
 	
 		<!-- Company Name and Logo -->
-        <a class="navbar-brand text-decoration-none" href="#">Lookify</a>
+        <a class="navbar-brand text-decoration-none" href="#">Driver's License</a>
         
         <!-- Toggler Button -->
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
@@ -53,6 +53,9 @@
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
                     <a class="nav-link active" href="/dashboard">Dashboard</a>
+                </li> 
+                <li class="nav-item">
+                    <a class="nav-link active" href="/licenses/new">Add New License</a>
                 </li> 
             </ul>
         </div>
@@ -66,30 +69,26 @@
 	<main class="mt-3">
 	 	<h2 class="mb-3">New Person</h2>
 		<form:form action="/persons/new" method="POST" modelAttribute="person">
+		    <!-- First Name Field -->
 		    <div class="form-group row mx-0">
-		        <form:label class="col-sm-1 col-form-label" path="title">Title</form:label>
+		        <form:label class="col-sm-1 col-form-label" path="firstName">First Name</form:label>
 		        <div class="col-sm-3">
-		        	<form:input class="form-control" type="text" path="title"/>
-		        	<form:errors class="small" path="title"/>
+		        	<form:input class="form-control" type="text" path="firstName"/>
+		        	<form:errors class="small" path="firstName"/>
 		        </div>
 		    </div>
+		    <!-- Last Name Field -->
 		    <div class="form-group row mx-0">
-		        <form:label class="col-sm-1 col-form-label" path="artist">Artist</form:label>
+		        <form:label class="col-sm-1 col-form-label" path="lastName">Last Name</form:label>
 		        <div class="col-sm-3">
-		        	<form:input class="form-control" type="text" path="artist"/>
-		        	<form:errors class="small" path="artist"/>
+		        	<form:input class="form-control" type="text" path="lastName"/>
+		        	<form:errors class="small" path="lastName"/>
 		        </div>
 		    </div>
-		    <div class="form-group row mx-0">
-		        <form:label class="col-sm-1 col-form-label" path="rating">Rating <span class="small">(Between 1-10)</span></form:label>
-		        <div class="col-sm-3">
-		        	<form:input class="form-control" type="number" path="rating"/>
-		        	<form:errors class="small" path="rating"/>
-		        </div>
-		    </div>
+		    
 		    <div class="form-group row mx-0">
 		    	<div class="col-sm-3 offset-sm-1">
-		    		<input class = "btn btn-success" type="submit" value="Submit"/>
+		    		<input class = "btn btn-success" type="submit" value="Create"/>
 		    	</div>	
 		    </div>
 	    

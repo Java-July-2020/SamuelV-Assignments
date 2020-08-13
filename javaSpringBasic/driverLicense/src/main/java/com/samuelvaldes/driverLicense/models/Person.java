@@ -13,6 +13,7 @@ import javax.persistence.OneToOne;
 import javax.persistence.PrePersist;
 import javax.persistence.PreUpdate;
 import javax.persistence.Table;
+import javax.validation.constraints.NotBlank;
 
 import org.springframework.format.annotation.DateTimeFormat;
 
@@ -27,8 +28,10 @@ public class Person {
     private Long id;
     
     @Column
+    @NotBlank (message = "Field cannot be empty")
     private String firstName;
     @Column
+    @NotBlank (message = "Field cannot be empty")
     private String lastName;
     
     @Column(updatable=false)
@@ -47,9 +50,14 @@ public class Person {
         
     }
     
+//    public Person(String firstName, String lastName) {
+//		this.firstName = firstName;
+//		this.lastName = lastName;
+//	}
+    
     // III) Getter and Setters Methods
     
-    public Long getId() {
+   	public Long getId() {
 		return id;
 	}
 
