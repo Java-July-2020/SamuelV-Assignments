@@ -14,6 +14,7 @@ import javax.persistence.PrePersist;
 import javax.persistence.PreUpdate;
 import javax.persistence.Table;
 import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.NotNull;
 
 import org.springframework.format.annotation.DateTimeFormat;
 
@@ -33,8 +34,8 @@ public class Ninja {
     @NotBlank (message = "Field cannot be empty")
     private String lastName;
     @Column
-    @NotBlank (message = "Field cannot be empty")
-    private int age;
+    @NotNull (message = "Field cannot be empty")
+    private Integer age;
     
     @Column(updatable=false)
     @DateTimeFormat(pattern = "MM/dd/yyyy HH:mm:ss")
@@ -86,12 +87,12 @@ public class Ninja {
 	}
 
 
-	public int getAge() {
+	public Integer getAge() {
 		return age;
 	}
 
 
-	public void setAge(int age) {
+	public void setAge(Integer age) {
 		this.age = age;
 	}
 
