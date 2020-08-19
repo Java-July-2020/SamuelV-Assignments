@@ -73,6 +73,8 @@
 	 	<h1><c:out value="${product.name}"/></h1>
 		
 		<div class="row">
+		
+			<!-- List of Categories linked to the Product -->
 			<div class="col-6">
 				<h4>Categories:</h4>
 				<ul class="offset-1">
@@ -81,16 +83,17 @@
 		        	</c:forEach>
 			    </ul>	
 			</div>
-			<div class="col-6">
-				<form:form action="/products/addCategory/${product.id}" method="POST" modelAttribute="productCategory">
+			
+			<!-- Add Category Form-->
+			<div class="col-3">
+				<form:form action="/products/addCategory" method="POST" modelAttribute="productCategory">
 			    
  			    	<!--  Hidden input for Product ID -->
 				    <form:input type="hidden" path="product" value="${ product.id }"/>
 				    
 					<!--  Category Selection Field -->
-			        <form:label class="col-3 col-form-label" path="category">Add Category:</form:label>
-			        
-			        <div class="form-group col-sm-3">
+			        <div class="form-group col-9">
+			        	<form:label class="col-form-label" path="category">Add Category:</form:label>
 			        	<form:select class="form-control" path="category">
 				        	<c:forEach items="${categoriesNotListed}" var="nonCat">
 				        		<form:option value="${nonCat.id}">${nonCat.name}</form:option>
@@ -100,13 +103,42 @@
 			        </div>
 				    
 					<!--  Submit Button -->
-				    <div class="form-group row mx-0">
-				    	<div class="col-3 offset-sm-1">
+				    <div class="form-group mx-0">
+				    	<div class="col-3 offset-5">
 				    		<input class = "btn btn-success" type="submit" value="Add"/>
 				    	</div>	
 			    	</div>
 			    </form:form>	
 			</div>
+			
+			<!-- Remove Category Form-->
+			<div class="col-3">
+				<form action="/products/removeCategory" method="POST">
+			    
+ 			    	<!--  Hidden input for Product ID -->
+				    <input type="hidden" name="product" value="${ product.id }"/>
+				    
+					<!--  Category Selection Field -->
+			        
+			        <div class="form-group col-9">
+			        	<label class="col-form-label" for="category">Remove Category:</label>
+			        	<select class="form-control" name="category" id="category">
+				        	<c:forEach items="${categoriesListed}" var="cat">
+				        		<option value="${cat.id}">${cat.name}</option>
+				        	</c:forEach>
+			        	</select>
+			     
+			        </div>
+				    
+					<!--  Submit Button -->
+				    <div class="form-group mx-0">
+				    	<div class="col-3 offset-4">
+				    		<input class = "btn btn-danger" type="submit" value="Remove"/>
+				    	</div>	
+			    	</div>
+			    </form>	
+			</div>
+			
 		</div>
 		
 	</main>

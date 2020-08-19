@@ -68,7 +68,7 @@
 	<main>
 	 	<h2>All Products and related Categories</h2>
 		<div class="row">
-			<div class="col-6">
+			<div class="col-9">
 				<table class="table table-dark table-small mt-3">
 			    	<thead>
 			        	<tr>
@@ -84,9 +84,11 @@
 			            	<td><c:out value="${product.name}"/></td>
 			            	<td>$ <c:out value="${product.price}"/></td>
 			            	<td>
-			            		<c:forEach items="${product.categories}" var="category">
-			            			<span> <c:out value="${category.name}"/> </span>
-			            		</c:forEach>
+			            		<ul>
+				            		<c:forEach items="${product.categories}" var="category">
+				            			<li> <c:out value="${category.name}"/> </li>
+				            		</c:forEach>
+			            		</ul>
 			            	</td>
 			            	<td> 
 			            		<a href="/products/${product.id}">Show</a> |
@@ -101,7 +103,7 @@
 		
 		<h2>All Categories and related Products</h2>
 		<div class="row">
-			<div class="col-6">
+			<div class="col-9">
 				<table class="table table-dark table-small mt-3">
 			    	<thead>
 			        	<tr>
@@ -115,10 +117,13 @@
 			        	<tr>
 			            	<td><c:out value="${category.name}"/></td>
 			            	<td>
+			            	<ul>
 			            		<c:forEach items="${category.products}" var="product">
-			            			<span> <c:out value="${product.name}"/> </span>
+			            			<li> <c:out value="${product.name}"/> </li>
 			            		</c:forEach>
+			            	</ul>
 			            	</td>
+			            	
 			            	<td> 
 			            		<a href="/categories/${category.id}">Show</a> |
 			            		<a href="/categories/delete/${category.id}">Delete</a> 

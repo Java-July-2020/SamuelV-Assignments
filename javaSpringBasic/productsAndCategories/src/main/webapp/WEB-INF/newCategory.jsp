@@ -72,8 +72,8 @@
 		    
 		    <!-- Name Field -->
 		    <div class="form-group row mx-0">
-		        <form:label class="col-sm-1 col-form-label" path="name">Name</form:label>
-		        <div class="col-sm-3">
+		        <form:label class="col-1 col-form-label" path="name">Name</form:label>
+		        <div class="col-3">
 		        	<form:input class="form-control" type="text" path="name"/>
 		        	<form:errors class="small" path="name"/>
 		        </div>
@@ -81,7 +81,7 @@
 		    
 		    <!-- Submit Button -->
 		    <div class="form-group row mx-0">
-		    	<div class="col-sm-3 offset-sm-1">
+		    	<div class="col-3 offset-1">
 		    		<input class = "btn btn-success" type="submit" value="Submit"/>
 		    	</div>	
 		    </div>

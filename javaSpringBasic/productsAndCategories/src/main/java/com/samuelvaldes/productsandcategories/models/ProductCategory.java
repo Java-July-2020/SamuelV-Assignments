@@ -48,6 +48,11 @@ public class ProductCategory {
 	    
 	}
 	
+	public ProductCategory(Product product, Category category) {
+		 this.product = product;
+		 this.category = category;
+	}
+	
 	// III) Getter and Setters Methods
 
 	public Long getId() {
