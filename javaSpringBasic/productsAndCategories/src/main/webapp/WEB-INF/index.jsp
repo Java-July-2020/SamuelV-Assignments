@@ -66,7 +66,7 @@
     <!-- ================================================================================================ -->
 	
 	<main>
-	 	<h2>All Products and related Categories</h2>
+	 	<h3>All Products and related Categories</h3>
 		<div class="row">
 			<div class="col-9">
 				<table class="table table-dark table-small mt-3">
@@ -101,7 +101,7 @@
 			</div>
 		</div>
 		
-		<h2>All Categories and related Products</h2>
+		<h3>All Categories and related Products</h3>
 		<div class="row">
 			<div class="col-9">
 				<table class="table table-dark table-small mt-3">
