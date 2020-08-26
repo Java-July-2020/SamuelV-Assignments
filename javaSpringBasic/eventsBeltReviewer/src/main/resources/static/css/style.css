@@ -1,0 +1,44 @@
+*{
+    margin: 0px;
+    padding: 0px;
+/*     outline: 1px solid red; */
+}
+
+main {
+	padding: 20px;
+	background-color: #dad8d8;
+} 
+
+p {
+	margin: 0px;
+}
+
+a {
+  text-decoration: underline !important;
+}
+
+[id$='errors']{
+	color: red !important;
+}
+
+.delete_form {
+	margin: 0px;
+	padding:0px;
+	display: inline;
+}
+
+.delete_button {
+	margin: 0px;
+	padding:0px;
+	border: 0px;
+	vertical-align: top;
+	text-decoration: underline;
+}
+
+#messageBox{
+	background-color: white;
+	overflow: scroll;
+    height: 200px;
+    width:82%
+
+}
